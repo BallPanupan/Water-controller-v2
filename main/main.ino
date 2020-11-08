@@ -37,7 +37,6 @@ void setup() {
   digitalWrite(relayPin4, HIGH);
 
   check_relay(); //เรียกใช้ Function check_relay(); จาก check_relay.h
-  relay_config();
 
   if (!OLED.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // สั่งให้จอ OLED เริ่มทำงานที่ Address 0x3C
     Serial.println("SSD1306 allocation failed");
