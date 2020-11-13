@@ -60,9 +60,9 @@ void loop() {
   OLED.print(':');
   OLED.print(tm.Second);
 
-  if (tm.Hour == 6 and tm.Minute == 0) {
-    relay_config();
-  }
+//  if (tm.Hour == 6 and tm.Minute == 0) {
+//    relay_config();
+//  }
 
   if (tm.Hour == 7 and tm.Minute == 0) {
     relay_config();
@@ -84,9 +84,9 @@ void loop() {
 
   }
 
-  if (tm.Hour == 17 and tm.Minute == 0) {
-    relay_config();
-  }
+//  if (tm.Hour == 17 and tm.Minute == 0) {
+//    relay_config();
+//  }
 
   if (RTC.read(tm)) {
     Serial.print("Ok, Time = ");
