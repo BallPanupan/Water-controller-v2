@@ -19,35 +19,35 @@ void relay_config() {
   delay(1000);
   digitalWrite(relayPin1, LOW); //เปิดน้ำ 10 นาที
   Serial.println("relayPin1 is LOW");
-  delay(1000);//420000
+  delay(420000);//420000
   digitalWrite(relayPin1, HIGH); //ปิดน้ำ 10 นาที
   Serial.println("relayPin1 is HIGH");
   delay(1000);//1000
   Serial.print("\n");
 
   delay(1000);
-  digitalWrite(relayPin2, LOW); //ปิดน้ำ
+  digitalWrite(relayPin2, LOW); //เปิดน้ำ 10 นาที
   Serial.println("relayPin2 is LOW");
-  delay(1000);//420000
-  digitalWrite(relayPin2, HIGH); //เปิดน้ำ
+  delay(420000);//420000
+  digitalWrite(relayPin2, HIGH); //ปิดน้ำ
   Serial.println("relayPin2 is HIGH");
   delay(1000);//1000
   Serial.print("\n");
 
   delay(1000);
-  digitalWrite(relayPin3, LOW); //ปิดน้ำ
+  digitalWrite(relayPin3, LOW); //เปิดน้ำ 10 นาที
   Serial.println("relayPin3 is LOW");
-  delay(1000);//420000
-  digitalWrite(relayPin3, HIGH); //เปิดน้ำ
+  delay(420000);//420000
+  digitalWrite(relayPin3, HIGH); //ปิดน้ำ
   Serial.println("relayPin3 is HIGH");
   delay(1000);//1000
   Serial.print("\n");
 
   delay(1000);
-  digitalWrite(relayPin4, LOW); //ปิดน้ำ
+  digitalWrite(relayPin4, LOW); //เปิดน้ำ 10 นาที
   Serial.println("relayPin4 is LOW");
-  delay(1000);//420000
-  digitalWrite(relayPin4, HIGH); //เปิดน้ำ
+  delay(420000);//420000
+  digitalWrite(relayPin4, HIGH); //ปิดน้ำ
   Serial.println("relayPin4 is HIGH");
   delay(1000);//1000
   Serial.print("\n");
