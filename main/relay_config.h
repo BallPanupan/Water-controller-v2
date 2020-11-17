@@ -17,10 +17,10 @@ void relay_config() {
   digitalWrite(relayPin4, HIGH);
   
   delay(1000);
-  digitalWrite(relayPin1, LOW); //เปิดน้ำ 10 นาที
+  digitalWrite(relayPin1, LOW); //เปิดน้ำ 3 นาที
   Serial.println("relayPin1 is LOW");
-  delay(420000);//420000
-  digitalWrite(relayPin1, HIGH); //ปิดน้ำ 10 นาที
+  delay(180000);//180000 3 นาที
+  digitalWrite(relayPin1, HIGH);
   Serial.println("relayPin1 is HIGH");
   delay(1000);//1000
   Serial.print("\n");
