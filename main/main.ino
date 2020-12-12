@@ -60,9 +60,14 @@ void loop() {
   OLED.print(':');
   OLED.print(tm.Second);
 
+  //  if (tm.Hour == 6 and tm.Minute == 0) {
+  //    relay_config();
+  //  }
+
   if (tm.Hour == 7 and tm.Minute == 0) {
     relay_config();
   } else {
+
     OLED.setCursor(0, 16); // กำหนดตำแหน่ง x,y ที่จะแสดงผล
     OLED.setTextSize(1); // กำหนดขนาดตัวอักษร
     OLED.print("water >> ");
@@ -77,10 +82,6 @@ void loop() {
   } else {
   }
   if (tm.Hour == 11 and tm.Minute == 0) {
-    on_sum();
-  } else {
-  }
-  if (tm.Hour == 12 and tm.Minute == 0) {
     on_sum();
   } else {
   }
@@ -104,6 +105,14 @@ void loop() {
     OLED.setTextSize(1); // กำหนดขนาดตัวอักษร
     OLED.print("water >> ");
   }
+
+  if (tm.Hour == 18 and tm.Minute == 0) {
+    lastday(); //เปิด Pump ทุกตัว 1 นาที
+  } else {
+  }
+  //  if (tm.Hour == 17 and tm.Minute == 0) {
+  //    relay_config();
+  //  }
 
   if (RTC.read(tm)) {
     Serial.print("Ok, Time = ");
